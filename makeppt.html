@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ 프리미엄 카지노 서비스 론칭 계획 (Tailwind CSS)</title>
+    <!-- Tailwind CSS CDN 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Noto Sans KR 폰트 적용 및 배경 설정 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #0D1117; /* GitHub Dark Mode Color */
+            color: #E6E6E6;
+        }
+        /* 메인 섹션 배경 효과 */
+        .glow-section {
+            background-color: #161B22; /* Slightly Lighter Dark Background */
+            border: 1px solid #30363D;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .glow-section:hover {
+            border-color: #58A6FF;
+            box-shadow: 0 4px 20px rgba(88, 166, 255, 0.2);
+        }
+        /* 강조 색상 (Gold/Accent) */
+        .accent-text {
+            color: #FFD700; /* Gold */
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+        .accent-bg {
+            background-color: #FFD700;
+        }
+        /* 수치 강조 애니메이션 */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        .key-metric .value {
+            animation: pulse 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- Header Section (Tailwind: Dark, Large, Center) -->
+    <header class="text-center py-10 mb-8 border-b-4 border-yellow-500 bg-gray-900 rounded-xl shadow-2xl">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-2 accent-text">
+            👑 프리미엄 카지노 서비스 론칭 계획 👑
+        </h1>
+        <p class="text-xl text-gray-400">안정적인 규모와 공격적인 경쟁 전략 분석</p>
+    </header>
+
+    <div class="container mx-auto space-y-12">
+
+        <!-- 1. 서비스 인프라 개요 -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-yellow-500 pl-4">
+                🔗 서비스 인프라 및 핵심 주소
+            </h2>
+            <p class="text-gray-400 mb-6">운영 안정성을 위한 관리 페이지와 게임 사이트의 분리 및 독립적 주소 체계 구축.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <p class="text-xs font-semibold uppercase text-yellow-500 mb-1">게임 사이트</p>
+                    <p class="text-2xl font-bold truncate">ORABLE-CASINO</p>
+                    <a href="https://game2.orable-casino.com" class="text-blue-400 hover:text-blue-300 text-sm break-all">https://game2.orable-casino.com</a>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <p class="text-xs font-semibold uppercase text-yellow-500 mb-1">관리 페이지</p>
+                    <p class="text-2xl font-bold truncate">ADMIN HQ</p>
+                    <a href="https://admin.orable-casino.com" class="text-blue-400 hover:text-blue-300 text-sm break-all">https://admin.orable-casino.com</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 핵심 운영 현황 (규모 강조) -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-yellow-500 pl-4">
+                💰 핵심 재무 및 운영 규모 현황 (기존 근거 자료 기반)
+            </h2>
+            <p class="text-gray-400 mb-6">검증된 시스템을 바탕으로 안정적인 자금 흐름과 규모를 유지하고 있습니다.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Total Reserve -->
+                <div class="key-metric p-4 bg-red-800/30 rounded-lg text-center border-2 border-red-500/50">
+                    <p class="text-xs font-medium text-red-400 uppercase">총 보유 금액</p>
+                    <p class="value text-2xl sm:text-3xl font-extrabold text-red-400 mt-1">9,929억+ 원</p>
+                </div>
+                <!-- Total Deposits -->
+                <div class="key-metric p-4 bg-green-800/30 rounded-lg text-center border-2 border-green-500/50">
+                    <p class="text-xs font-medium text-green-400 uppercase">총 입금액</p>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-green-400 mt-1">1.65억 원</p>
+                </div>
+                <!-- Total Bets -->
+                <div class="key-metric p-4 bg-indigo-800/30 rounded-lg text-center border-2 border-indigo-500/50">
+                    <p class="text-xs font-medium text-indigo-400 uppercase">총 배팅 금액</p>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400 mt-1">1.92억 원</p>
+                </div>
+                <!-- Payout Profit -->
+                <div class="key-metric p-4 bg-yellow-800/30 rounded-lg text-center border-2 border-yellow-500/50">
+                    <p class="text-xs font-medium text-yellow-400 uppercase">배당 수익</p>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-yellow-400 mt-1">7,675만 원</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3. 투자 계획 및 회수 목표 -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8 border-4 border-purple-500/50">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-purple-500 pl-4">
+                🚀 핵심 투자 계획 및 회수 목표 (ROI Target)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Investment Amount -->
+                <div class="key-metric p-6 bg-purple-900/50 rounded-lg text-center border-2 border-purple-500 shadow-xl">
+                    <p class="text-xs font-medium text-purple-400 uppercase">총 투자금 (Capital Investment)</p>
+                    <p class="value text-4xl sm:text-5xl font-extrabold text-purple-400 mt-2">5억 원</p>
+                    <p class="text-sm text-gray-300 mt-2">시스템 고도화 및 초기 공격적 마케팅 비용으로 활용</p>
+                </div>
+                <!-- ROI Target -->
+                <div class="key-metric p-6 bg-red-900/50 rounded-lg text-center border-2 border-red-500 shadow-xl">
+                    <p class="text-xs font-medium text-red-400 uppercase">투자금 회수 목표 기간 (ROI Target)</p>
+                    <p class="value text-4xl sm:text-5xl font-extrabold text-red-400 mt-2">12 개월</p>
+                    <p class="text-sm text-gray-300 mt-2">차별화된 요율을 통한 빠른 시장 점유율 확보 목표</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 4. 핵심 서비스 전략 (NEW SECTION) -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-red-500 pl-4">
+                ✨ 핵심 서비스 전략 (Competitive Edge)
+            </h2>
+            <div class="space-y-4 text-lg">
+                <p class="text-gray-300">
+                    <span class="font-bold accent-text">1. 고가치 파트너 유인 전략:</span>
+                    경쟁사 대비 슬롯 및 카지노 게임에 **0.4%p**를 추가 지급하는 파격적인 영업 요율을 통해 고가치 매장 파트너를 독점적으로 확보합니다.
+                </p>
+                <p class="text-gray-300">
+                    <span class="font-bold accent-text">2. 글로벌 탑티어 게임 라인업:</span>
+                    **Evolution, Ezugi** 등 검증된 라이브 카지노와 10개 이상의 인기 슬롯 제공사(Pragmatic, PG SOFT 등)를 확보하여, 고객 유입 및 잔존율을 극대화합니다.
+                </p>
+                <p class="text-gray-300">
+                    <span class="font-bold accent-text">3. 안정적인 인프라 기반:</span>
+                    9,929억 원 이상의 총 보유 금액을 관리하는 안정적인 시스템과 분리된 관리/게임 서버를 통해 서비스의 신뢰도를 보장합니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 5. 론칭 게임 라인업 -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-yellow-500 pl-4">
+                🎲 프리미엄 론칭 게임 파트너사
+            </h2>
+
+            <div class="space-y-6">
+                <!-- 라이브 카지노 -->
+                <h3 class="text-xl font-semibold text-gray-300 border-b border-gray-700 pb-2">라이브 카지노 (Live Casino)</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-4 py-2 bg-red-600 rounded-full text-white shadow-lg font-bold hover:bg-red-500 transition">Evolution Gaming (업계 1위)</span>
+                    <span class="px-4 py-2 bg-red-600 rounded-full text-white shadow-lg font-bold hover:bg-red-500 transition">Ezugi</span>
+                </div>
+
+                <!-- 슬롯 게임 -->
+                <h3 class="text-xl font-semibold text-gray-300 border-b border-gray-700 pb-2">슬롯 게임 (Slot Game - 10개 파트너)</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">Pragmatic Play</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">Booongo</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">CQ9 GAMING</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">PG SOFT</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">EVOPLAY</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">DREAMTECH</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">HABANERO</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">REEL PLAY</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">TOPTREND</span>
+                    <span class="px-3 py-1 bg-blue-600 rounded-full text-white text-sm hover:bg-blue-500 transition">PLAYSON</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. 영업 요율 및 경쟁 전략 -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-yellow-500 pl-4">
+                📈 공격적인 매장 영업 요율 전략 (경쟁 우위 확보)
+            </h2>
+            <p class="text-gray-400 mb-4">슬롯/카지노 게임에 **0.4%p**를 추가 제공하여 신규 매장 유치 및 파트너십 강화.</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left table-auto">
+                    <thead>
+                        <tr class="bg-gray-700">
+                            <!-- 모바일에 맞춰 가로, 세로 패딩 조정 -->
+                            <th class="px-3 py-3 sm:px-4 sm:py-4 uppercase text-xs font-semibold tracking-wider">구분</th>
+                            <th class="px-3 py-3 sm:px-4 sm:py-4 uppercase text-xs font-semibold tracking-wider">기존 요율</th>
+                            <th class="px-3 py-3 sm:px-4 sm:py-4 uppercase text-xs font-semibold tracking-wider bg-yellow-900/50">계획 요율 (강화)</th>
+                            <th class="px-3 py-3 sm:px-4 sm:py-4 uppercase text-xs font-semibold tracking-wider">경쟁력 확보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-700 hover:bg-gray-800">
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 font-bold">슬롯 게임</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-gray-400">4.0%</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-2xl font-extrabold text-green-400">4.4%</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-xl font-bold text-green-500">+0.4%</td>
+                        </tr>
+                        <tr class="border-b border-gray-700 hover:bg-gray-800">
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 font-bold">카지노 게임</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-gray-400">1.0%</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-2xl font-extrabold text-green-400">1.4%</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-xl font-bold text-green-500">+0.4%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800">
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 font-bold">죽장 (매출)</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-gray-400">40%</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-xl font-extrabold text-gray-400">40%</td>
+                            <td class="px-3 py-3 sm:px-4 sm:py-4 text-gray-500">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 7. 영업 실행 계획 및 지원 -->
+        <div class="section glow-section rounded-xl p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-6 border-l-4 border-yellow-500 pl-4">
+                🎯 구체적인 영업 실행 계획 및 지원
+            </h2>
+            <ul class="list-disc list-inside space-y-4 ml-4 text-lg">
+                <li class="font-semibold text-gray-300">
+                    <span class="accent-text font-extrabold">전국 성인 PC 방 DB 활용 (기초):</span> 
+                    가장 효율성이 높은 전국 성인 PC 방 데이터베이스를 기반으로 잠재 파트너를 정밀 발굴합니다.
+                </li>
+                <li class="font-semibold text-gray-300">
+                    <span class="accent-text font-extrabold">DM 발송 및 대면 영업 (실행):</span> 
+                    데이터 기반의 DM 발송 후, 즉시 현장 대면 미팅을 결합하여 계약 성사율을 높이는 공격적인 영업을 전개합니다.
+                </li>
+                <li class="font-semibold text-gray-300">
+                    <span class="accent-text font-extrabold">영업 및 서비스 지원 업체 현황 (지원):</span> 
+                    전담 지원 업체를 통해 체계적인 매장 관리, CS, 기술 지원을 상시 제공하여 파트너사의 안정적인 수익 창출을 돕습니다.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 mt-8 text-gray-500 text-sm border-t border-gray-700">
+        &copy; 2025 Premium Casino Service Plan. Confidential Document.
+    </footer>
+
+</body>
+</html>
